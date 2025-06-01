@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nodejs-app
-        image: "node-app:latest"
+        image: "local/node-app:latest"
         imagePullPolicy: Never
         ports:
           - containerPort: 3000
