@@ -26,7 +26,7 @@ jobs:
       run: |
           minikube service list
           kubectl get pods
-          kubectl logs nodejs-app
+          kubectl describe pods nodejs-app
           minikube service nodejs-app --url --wait 30
     - name: Logs
       run: |
